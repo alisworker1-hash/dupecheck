@@ -75,6 +75,17 @@ function renderGrid() {
     );
   }
   
+  if (!list.length) {
+    $("#grid").innerHTML = `
+      <div class="empty-state">
+        <div class="empty-emoji">🔍</div>
+        <p>No vetted dupes found${searchQuery.trim() ? ` for “${esc(searchQuery)}”` : " here"}. Try another search or category.</p>
+      </div>`;
+    $("#resultsNote").textContent = searchQuery.trim()
+      ? `No review-vetted dupes match "${searchQuery}".`
+      : "No review-vetted dupes in this category yet.";
+    return;
+  }
   $("#grid").innerHTML = list.map(card).join("");
   $("#resultsNote").textContent =
     `Showing ${list.length} review-vetted ${activeCat === "all" ? "" : CATS[activeCat].label.toLowerCase() + " "}dupe${list.length === 1 ? "" : "s"}${searchQuery.trim() ? ` matching "${searchQuery}"` : ""} — each one passed the check.`;
