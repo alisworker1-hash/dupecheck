@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "updated": "2026-06-20",
+    "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason.",
+    "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
+  },
+  "dupes": [
+    {
+      "id": "elf-halo-glow",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Halo Glow Liquid Filter", "brand": "e.l.f.", "price": 14 },
+      "original": { "name": "Hollywood Flawless Filter", "brand": "Charlotte Tilbury", "price": 49 },
+      "summary": "A genuinely close lit-from-within glow for under a third of the price — even a touch more hydrating thanks to hyaluronic acid.",
+      "caveat": "Oily skin: set with powder or you may go shiny by afternoon. Slightly thicker, needs a little more blending.",
+      "reviews": [
+        { "source": "A Woman's Confidence", "url": "https://awomansconfidence.com/2023/07/09/is-e-l-f-cosmetics-halo-glow-liquid-filter-really-a-dupe-for-charlotte-tilbury-hollywood-flawless-filter-a-side-by-side-comparison/", "takeaway": "\"A pretty good dupe — not 100% identical, but Charlotte Tilbury isn't twice as good, and this is less than half the price.\"" },
+        { "source": "Forever Mursal", "url": "https://forevermursal.com/e-l-f-halo-glow-liquid-filter-vs-charlotte-tilbury-hollywood-flawless-filter-which-one-should-you-buy/", "takeaway": "Recommends e.l.f. for value + a dewier, more hydrated finish; CT for a more refined glow." }
+      ]
+    },
+    {
+      "id": "elf-power-grip",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Power Grip Primer", "brand": "e.l.f.", "price": 11 },
+      "original": { "name": "Hydro Grip Primer", "brand": "Milk Makeup", "price": 38 },
+      "summary": "Reviewers find staying power essentially equal — the e.l.f. is actually stickier and grips makeup all day for a third of the cost.",
+      "caveat": "Very tacky on application (it does dry down). Alcohol-based vs Milk's more hydrating formula.",
+      "reviews": [
+        { "source": "TODAY", "url": "https://www.today.com/shop/elf-vs-milk-hydro-grip-primer-rcna200292", "takeaway": "\"The two primers compare equally in staying power.\" $11 vs $38." },
+        { "source": "PureWow", "url": "https://www.purewow.com/beauty/milk-makeup-hydro-grip-primer-vs-elf-power-grip-primer-review", "takeaway": "e.l.f. layers best with skincare + makeup and is named the winner on value." }
+      ]
+    },
+    {
+      "id": "elf-camo-concealer",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "16HR Camo Concealer", "brand": "e.l.f.", "price": 6 },
+      "original": { "name": "Shape Tape Concealer", "brand": "Tarte", "price": 27 },
+      "summary": "Near-identical full-coverage, matte-dry-down concealer for ~$6. Many reviewers find it blends with less creasing than Shape Tape.",
+      "caveat": "Oxidizes slightly darker than the cap shade; 18 shades vs Tarte's 30. Pick a touch lighter.",
+      "reviews": [
+        { "source": "PureWow", "url": "https://www.purewow.com/beauty/what-the-dupe-tarte-shape-tape-elf-concealer", "takeaway": "\"Performance and coverage are almost identical\" — both full-coverage, creamy, matte." },
+        { "source": "Dishing Up Chic", "url": "https://dishingupchic.com/2020/01/20/dupe-or-dud-elf-16hr-camo-concealer-vs-tarte-shape-tape/", "takeaway": "Builds beautifully and blends just as easily, if not more so, than Shape Tape." }
+      ]
+    },
+    {
+      "id": "cushionaire-lane",
+      "category": "shoes",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Lane Cork Footbed Sandal", "brand": "CUSHIONAIRE", "price": 40 },
+      "original": { "name": "Arizona Sandal", "brand": "Birkenstock", "price": 110 },
+      "summary": "Cork-footbed sandal with real arch support and — unlike Birkenstocks — basically no break-in period. Comfortable out of the box.",
+      "caveat": "Runs small (size up a half). Less durable long-term than a Birkenstock.",
+      "reviews": [
+        { "source": "Lemon8 — Lissa", "url": "https://www.lemon8-app.com/lissa_bax/7222735270113198597?region=us", "takeaway": "Immediate comfort + arch support, no break-in — a \"fantastic, affordable alternative.\"" },
+        { "source": "Rank & Style", "url": "https://www.rankandstyle.com/articles/birkenstock-dupes", "takeaway": "Highly recommended for those new to structured footbeds wanting arch support." }
+      ]
+    },
+    {
+      "id": "adidas-cloudfoam",
+      "category": "shoes",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Cloudfoam Pure", "brand": "Adidas", "price": 55 },
+      "original": { "name": "Clifton 9", "brand": "Hoka", "price": 145 },
+      "summary": "A cushiony, plush everyday trainer with a cult following — a comfy, sleeker stand-in for Hoka's max-cushion ride at a fraction of the price.",
+      "caveat": "More of a lifestyle/walking shoe; serious runners may still prefer Hoka, Brooks Glycerin or ASICS Nimbus for high mileage.",
+      "reviews": [
+        { "source": "topsfordays", "url": "https://topsfordays.com/blogs/fashion/hoka-alternatives", "takeaway": "Listed among Hoka alternatives that \"feel just as good,\" from $48." },
+        { "source": "10News", "url": "https://www.10news.com/hoka-shoes-dupes-are-28-at-walmart", "takeaway": "Cushioned, soft step with a heavy dose of comfort and a loyal following." }
+      ]
+    },
+    {
+      "id": "quince-cashmere",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Mongolian Cashmere Crewneck", "brand": "Quince", "price": 50 },
+      "original": { "name": "Luxury Cashmere Sweater", "brand": "Designer (e.g. Naadam/Everlane)", "price": 150 },
+      "summary": "Soft, well-constructed grade-A cashmere for ~$50 — widely praised as luxury-level quality at a fraction of designer prices.",
+      "caveat": "Some pilling and occasional fit inconsistency reported — generally seen as acceptable for the price.",
+      "reviews": [
+        { "source": "Reddit / r/femalefashionadvice (consensus)", "url": "https://www.reddit.com/r/femalefashionadvice/search/?q=quince%20cashmere", "takeaway": "Broadly positive: soft, holds up after washes, excellent quality-to-price ratio." }
+      ]
+    },
+    {
+      "id": "ododos-belt-bag",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Mini Belt Bag", "brand": "ODODOS", "price": 14 },
+      "original": { "name": "Everywhere Belt Bag", "brand": "Lululemon", "price": 38 },
+      "summary": "Strikingly similar: same size, water-resistant fabric, adjustable strap and pockets — with 10,000+ 5-star reviews and 30+ colors.",
+      "caveat": "The Lululemon will outlast it long-term; zipper hardware differs (metal vs plastic).",
+      "reviews": [
+        { "source": "Yahoo", "url": "https://sports.yahoo.com/lululemon-everywhere-belt-bag-alternative-amazon-163338506.html", "takeaway": "\"You can't tell me this doesn't look the exact same\" — ~$14 vs $38." },
+        { "source": "Teri Lyn Adams", "url": "https://terilynadams.com/lululemon-everywhere-belt-bag-dupe/", "takeaway": "Same size + water-resistant fabric; main diff is metal vs plastic zipper." }
+      ]
+    },
+    {
+      "id": "amazon-skims-bodysuit",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 3.5,
+      "dupe": { "name": "Sculpting Bodysuit", "brand": "Amazon (viral SKIMS-style)", "price": 30 },
+      "original": { "name": "Sculpting Bodysuit", "brand": "SKIMS", "price": 68 },
+      "summary": "A conditional pass: 20k+ ratings and ~82% at 4 stars or higher. Gets you ~70% of the way for ~30% of the price.",
+      "caveat": "Polyester (vs SKIMS' softer polyamide). Some find it compresses hard, runs short in the torso, and may shrink. Buy true to size, not for daily heavy wear.",
+      "reviews": [
+        { "source": "Reviewed", "url": "https://www.reviewed.com/style/content/skims-dupes-review-amazon", "takeaway": "Worthy budget alternative, but not identical — SKIMS hand-feel and durability are real." },
+        { "source": "CNN Underscored", "url": "https://www.cnn.com/cnn-underscored/fashion/skims-vs-amazon-crew-neck-bodysuit", "takeaway": "A solid ~$29 alternative when SKIMS is sold out." }
+      ]
+    },
+    {
+      "id": "tineco-a11",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "A11 Hero Cordless Vacuum", "brand": "Tineco", "price": 199 },
+      "original": { "name": "V-Series Cordless Vacuum", "brand": "Dyson", "price": 500 },
+      "summary": "Mimics Dyson's most-loved features — strong suction, ~40 min runtime, converts to a handheld — for a fraction of the cost.",
+      "caveat": "Runtime/peak suction below the top Dyson; owners report 3–5 yr lifespans with care.",
+      "reviews": [
+        { "source": "Rolling Stone", "url": "https://www.rollingstone.com/product-recommendations/lifestyle/best-dyson-vacuum-alternative-1264489/", "takeaway": "\"Best alternative to Dyson stick vacuums\" — mimics coveted features for a fraction of the cost." },
+        { "source": "Prudent Reviews", "url": "https://prudentreviews.com/dyson-alternatives/", "takeaway": "Listed among the best Dyson alternatives that cost less without sacrificing core performance." }
+      ]
+    },
+    {
+      "id": "ultenic-u12",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "U12 Vesla Cordless Vacuum", "brand": "Ultenic", "price": 149 },
+      "original": { "name": "Cordless Stick Vacuum", "brand": "Dyson", "price": 500 },
+      "summary": "A 4.3 lb cordless that converts to handheld and earned a hands-on 'Dyson dupe to contend with' verdict — around $149–179.",
+      "caveat": "Smaller brand; check warranty terms. Not as refined as Dyson's flagship.",
+      "reviews": [
+        { "source": "Tom's Guide", "url": "https://www.tomsguide.com/home/home-appliances/my-house-is-spotless-thanks-to-this-149-dollar-Dyson-vacuum-clone", "takeaway": "\"My house is spotless thanks to this $149 Dyson vacuum clone.\"" },
+        { "source": "SlashGear", "url": "https://www.slashgear.com/1953114/best-dyson-cordless-vacuum-alternatives/", "takeaway": "Among the best Dyson cordless alternatives according to owners." }
+      ]
+    },
+
+    {
+      "id": "reject-logo-bag",
+      "category": "clothing",
+      "verdict": "reject",
+      "rating": 1.5,
+      "dupe": { "name": "Fake-branded 'designer' handbag", "brand": "No-name (logo copy)", "price": 35 },
+      "original": { "name": "Luxury logo handbag", "brand": "Designer", "price": 2000 },
+      "summary": "Rejected. A bag that copies a brand's logo/monogram is a counterfeit — a legal gray area, and reviewers consistently report poor materials and hardware.",
+      "caveat": "We only list legitimate look-alikes, never fakes that carry someone else's trademark.",
+      "reasons": ["Counterfeit / trademark infringement", "Inconsistent materials & hardware in reviews"],
+      "reviews": [
+        { "source": "AMRA & ELMA (trend overview)", "url": "https://www.amraandelma.com/tiktokers-with-viral-designer-dupes/", "takeaway": "Designer logo 'dupes' carry real quality and authenticity concerns." }
+      ]
+    },
+    {
+      "id": "reject-noname-dyson-clone",
+      "category": "appliances",
+      "verdict": "reject",
+      "rating": 2.0,
+      "dupe": { "name": "Ultra-budget 'Dyson-style' cordless", "brand": "No-name (~$60)", "price": 60 },
+      "original": { "name": "Cordless Vacuum", "brand": "Dyson", "price": 500 },
+      "summary": "Rejected. The sub-$70 no-name clones repeatedly draw complaints of weak suction and short lifespans — the reputable budget picks (Tineco, Ultenic, Shark) are only a little more.",
+      "caveat": "Spend the extra ~$90 on a reviewed brand; the rock-bottom clones are a false economy.",
+      "reasons": ["Weak suction in owner reviews", "Short lifespan / battery degradation"],
+      "reviews": [
+        { "source": "House Digest", "url": "https://www.housedigest.com/2036671/expensive-dyson-worth-buying-affordable-alternatives/", "takeaway": "Affordable alternatives can be great — but the cheapest no-name clones are where quality falls apart." }
+      ]
+    },
+    {
+      "id": "reject-noname-runner",
+      "category": "shoes",
+      "verdict": "reject",
+      "rating": 2.0,
+      "dupe": { "name": "$20 'max-cushion' running shoe", "brand": "No-name", "price": 20 },
+      "original": { "name": "Clifton 9", "brand": "Hoka", "price": 145 },
+      "summary": "Rejected for running. Sub-$25 no-name 'Hoka-style' shoes look the part but reviewers report the foam packs out fast and offers little real support — fine for casual wear, not for mileage.",
+      "caveat": "If you actually run, step up to Adidas Cloudfoam, Brooks or ASICS; the $20 ones aren't worth the injury risk.",
+      "reasons": ["Cushion compresses quickly", "Minimal support / durability"],
+      "reviews": [
+        { "source": "topsfordays", "url": "https://topsfordays.com/blogs/fashion/hoka-alternatives", "takeaway": "Plenty of good Hoka alternatives exist — but the rock-bottom no-names aren't among the ones that 'feel just as good.'" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DupeCheck — only review-vetted dupes</title>
+  <meta name="description" content="Affordable dupes for makeup, shoes, clothing and appliances — every one checked against real reviews. We hide the ones that don't pass." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#"><span class="logo-mark">✓</span> Dupe<span class="logo-accent">Check</span></a>
+      <p class="tagline">Only dupes that pass a real review check.</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Stop guessing. <span>Get the dupe that actually holds up.</span></h1>
+      <p class="hero-sub">We research each dupe against real reviews from multiple sources, then show you only the ones worth buying — and tell you exactly why the rest didn't make the cut.</p>
+      <div class="stats" id="stats"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <nav class="filters" id="filters" aria-label="Categories"></nav>
+
+    <p class="results-note" id="resultsNote"></p>
+    <div class="grid" id="grid"></div>
+
+    <section class="rejects">
+      <button class="rejects-toggle" id="rejectsToggle" aria-expanded="false">
+        <span id="rejectsLabel">Didn't make the cut</span>
+        <span class="chev">▾</span>
+      </button>
+      <p class="rejects-intro">These looked tempting but failed our review check. Here's exactly why — so the trust cuts both ways.</p>
+      <div class="grid rejects-grid" id="rejectsGrid" hidden></div>
+    </section>
+  </main>
+
+  <!-- Detail modal -->
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <h3>How we vet</h3>
+      <p id="methodology"></p>
+      <p class="disclaimer" id="disclaimer"></p>
+      <p class="built">Built as a research demo · data last updated <span id="updated"></span>. No affiliate links, no sponsorships.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
