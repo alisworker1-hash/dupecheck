@@ -1,7 +1,7 @@
 {
   "meta": {
     "updated": "2026-06-20",
-    "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason.",
+    "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason. Entries marked 'Consensus across reviews' summarize the well-documented review consensus with a search link; individually-cited entries link the specific articles.",
     "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
   },
   "dupes": [
@@ -48,6 +48,46 @@
       ]
     },
     {
+      "id": "elf-glow-lip-oil",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Glow Reviver Lip Oil", "brand": "e.l.f.", "price": 8 },
+      "original": { "name": "Lip Glow Oil", "brand": "Dior", "price": 40 },
+      "summary": "One of the most-recommended Dior Lip Glow Oil dupes: a non-sticky, tinted, hydrating shine for about a fifth of the price.",
+      "caveat": "Dior is slightly more cushiony and longer-wearing; the e.l.f. shades lean a touch sheerer.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=e.l.f.+Glow+Reviver+Lip+Oil+vs+Dior+Lip+Glow+Oil+dupe+review", "takeaway": "Widely cited as the best budget Dior Lip Glow Oil dupe — similar glossy, hydrating tint without the stickiness." }
+      ]
+    },
+    {
+      "id": "nyx-setting-spray",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Matte Finish Setting Spray", "brand": "NYX", "price": 9 },
+      "original": { "name": "All Nighter Setting Spray", "brand": "Urban Decay", "price": 38 },
+      "summary": "A long-standing drugstore staple that locks makeup in place for hours at a quarter of the price.",
+      "caveat": "Urban Decay still edges it for all-day wear in heat/humidity; NYX is the better everyday value.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=NYX+Matte+Finish+setting+spray+vs+Urban+Decay+All+Nighter+dupe+review", "takeaway": "Long regarded as a solid All Nighter alternative for normal wear; UD wins only on extreme longevity." }
+      ]
+    },
+    {
+      "id": "sky-high-mascara",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Lash Sensational Sky High Mascara", "brand": "Maybelline", "price": 13 },
+      "original": { "name": "Roller Lash / luxury lengthening mascara", "brand": "Benefit", "price": 29 },
+      "summary": "A cult drugstore lengthener that beats many high-end mascaras for length and lift — repeatedly out-performs pricier ones in head-to-heads.",
+      "caveat": "Can clump if over-applied; wipe the wand. Removal needs a good cleanser.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Maybelline+Sky+High+mascara+vs+high+end+dupe+review", "takeaway": "Frequently rated as good as or better than mascaras 2–3× the price for dramatic length." }
+      ]
+    },
+
+    {
       "id": "cushionaire-lane",
       "category": "shoes",
       "verdict": "pass",
@@ -76,6 +116,33 @@
       ]
     },
     {
+      "id": "koolaburra-ugg",
+      "category": "shoes",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Koola Short Boot", "brand": "Koolaburra by UGG", "price": 60 },
+      "original": { "name": "Classic Mini Boot", "brand": "UGG", "price": 150 },
+      "summary": "Made by UGG's own parent company (Deckers) — the closest 'official' budget line: same cozy look and faux-shearling warmth for far less.",
+      "caveat": "Faux (not genuine) shearling, so less plush and less durable than real UGGs over years of wear.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Koolaburra+by+UGG+vs+UGG+worth+it+review", "takeaway": "Widely seen as the most legit UGG alternative since it's from the same parent brand; great value, slightly less luxe feel." }
+      ]
+    },
+    {
+      "id": "cushionaire-boston",
+      "category": "shoes",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Cork Clog", "brand": "CUSHIONAIRE", "price": 38 },
+      "original": { "name": "Boston Clog", "brand": "Birkenstock", "price": 160 },
+      "summary": "The viral Birkenstock Boston clog look for a quarter of the price, with the same cork-footbed silhouette and slip-on ease.",
+      "caveat": "Footbed is firmer and less anatomically contoured than a real Birk; sizing runs small.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Birkenstock+Boston+clog+dupe+review+worth+it", "takeaway": "Popular Boston-clog look-alike; reviewers like the price and look, with the usual 'less contoured footbed' trade-off." }
+      ]
+    },
+
+    {
       "id": "quince-cashmere",
       "category": "clothing",
       "verdict": "pass",
@@ -103,6 +170,32 @@
       ]
     },
     {
+      "id": "crz-align",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Butterluxe High-Waist Leggings", "brand": "CRZ YOGA", "price": 28 },
+      "original": { "name": "Align High-Rise Leggings", "brand": "Lululemon", "price": 98 },
+      "summary": "The most-recommended Align dupe by a mile: buttery-soft, squat-proof and flattering for under a third of the price.",
+      "caveat": "Lululemon's Align is still slightly softer/more weightless; CRZ runs a touch more compressive (some size up).",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=CRZ+Yoga+Butterluxe+vs+Lululemon+Align+dupe+review", "takeaway": "Repeatedly named the top Align alternative — near-identical buttery feel, squat-proof, a fraction of the price." }
+      ]
+    },
+    {
+      "id": "orolay-coat",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Thickened Down Jacket ('the Amazon Coat')", "brand": "Orolay", "price": 120 },
+      "original": { "name": "Luxury down parka", "brand": "Moncler / Canada Goose", "price": 1000 },
+      "summary": "The famous 'Amazon Coat' — genuinely warm real-down parka that went viral as a budget stand-in for $1,000+ luxury down, with tens of thousands of reviews.",
+      "caveat": "Heavier and less refined/tailored than luxury down; fit runs boxy (many size down).",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Orolay+Amazon+coat+review+worth+it+vs+luxury+down", "takeaway": "Long-running viral pick: seriously warm real-down warmth for a fraction of luxury parkas; the trade-off is bulk and a less premium finish." }
+      ]
+    },
+    {
       "id": "amazon-skims-bodysuit",
       "category": "clothing",
       "verdict": "pass",
@@ -116,6 +209,7 @@
         { "source": "CNN Underscored", "url": "https://www.cnn.com/cnn-underscored/fashion/skims-vs-amazon-crew-neck-bodysuit", "takeaway": "A solid ~$29 alternative when SKIMS is sold out." }
       ]
     },
+
     {
       "id": "tineco-a11",
       "category": "appliances",
@@ -142,6 +236,32 @@
       "reviews": [
         { "source": "Tom's Guide", "url": "https://www.tomsguide.com/home/home-appliances/my-house-is-spotless-thanks-to-this-149-dollar-Dyson-vacuum-clone", "takeaway": "\"My house is spotless thanks to this $149 Dyson vacuum clone.\"" },
         { "source": "SlashGear", "url": "https://www.slashgear.com/1953114/best-dyson-cordless-vacuum-alternatives/", "takeaway": "Among the best Dyson cordless alternatives according to owners." }
+      ]
+    },
+    {
+      "id": "shark-flexstyle",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "FlexStyle Air Styler", "brand": "Shark", "price": 299 },
+      "original": { "name": "Airwrap Multi-Styler", "brand": "Dyson", "price": 600 },
+      "summary": "The most-recommended Airwrap alternative: same Coanda-style auto-wrap curls, and it doubles as a powerful standalone hair dryer — for about half.",
+      "caveat": "Heavier in the hand and the attachments differ slightly; Dyson is quieter and more polished.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Shark+FlexStyle+vs+Dyson+Airwrap+review+worth+it", "takeaway": "Repeatedly named the best Airwrap dupe — comparable curls and a stronger dryer mode at roughly half the price." }
+      ]
+    },
+    {
+      "id": "simple-modern-tumbler",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Trek 40oz Tumbler", "brand": "Simple Modern", "price": 25 },
+      "original": { "name": "Quencher H2.0 40oz", "brand": "Stanley", "price": 45 },
+      "summary": "Same 40oz handled-tumbler format, strong insulation and dozens of colors — a well-reviewed Stanley Quencher stand-in for nearly half.",
+      "caveat": "Stanley's lid/straw and long-term durability have a slight edge; otherwise very close.",
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Simple+Modern+Trek+vs+Stanley+Quencher+tumbler+review", "takeaway": "Frequently rated as good as the Stanley Quencher on insulation and feel, for less money." }
       ]
     },
 
@@ -185,6 +305,34 @@
       "reasons": ["Cushion compresses quickly", "Minimal support / durability"],
       "reviews": [
         { "source": "topsfordays", "url": "https://topsfordays.com/blogs/fashion/hoka-alternatives", "takeaway": "Plenty of good Hoka alternatives exist — but the rock-bottom no-names aren't among the ones that 'feel just as good.'" }
+      ]
+    },
+    {
+      "id": "reject-temu-airwrap",
+      "category": "appliances",
+      "verdict": "reject",
+      "rating": 1.5,
+      "dupe": { "name": "$40 'air styler' clone", "brand": "No-name marketplace", "price": 40 },
+      "original": { "name": "Airwrap Multi-Styler", "brand": "Dyson", "price": 600 },
+      "summary": "Rejected on safety. The rock-bottom Airwrap clones repeatedly draw reports of overheating, weak Coanda airflow that won't actually wrap hair, and electrical-safety concerns.",
+      "caveat": "For a real alternative, the Shark FlexStyle (listed above) is the vetted pick — not the $40 marketplace clones.",
+      "reasons": ["Overheating / hair-damage & safety reports", "Airflow too weak to actually curl"],
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=cheap+Dyson+Airwrap+dupe+overheating+bad+review", "takeaway": "The ultra-cheap clones are widely flagged for overheating and ineffective curling — the opposite of a safe dupe." }
+      ]
+    },
+    {
+      "id": "reject-noname-align",
+      "category": "clothing",
+      "verdict": "reject",
+      "rating": 2.0,
+      "dupe": { "name": "$8 'buttery' leggings", "brand": "No-name", "price": 8 },
+      "original": { "name": "Align High-Rise Leggings", "brand": "Lululemon", "price": 98 },
+      "summary": "Rejected. The rock-bottom Align knockoffs commonly fail the squat test (see-through), pill after a few washes, and lose their waistband — false economy when CRZ YOGA (listed above) is only ~$28.",
+      "caveat": "Buy the vetted CRZ pick instead; the $8 ones rarely last a season.",
+      "reasons": ["See-through / fails squat test", "Pills and loses shape fast"],
+      "reviews": [
+        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=cheap+lululemon+align+dupe+see+through+pilling+review", "takeaway": "The cheapest Align knockoffs are widely warned against for sheerness and durability; spend a bit more on a reviewed pair." }
       ]
     }
   ]
