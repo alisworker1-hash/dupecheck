@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-20",
+    "updated": "2026-06-21",
     "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason. Entries marked 'Consensus across reviews' summarize the well-documented review consensus with a search link; individually-cited entries link the specific articles.",
     "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
   },
@@ -263,6 +263,106 @@
       "reviews": [
         { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Simple+Modern+Trek+vs+Stanley+Quencher+tumbler+review", "takeaway": "Frequently rated as good as the Stanley Quencher on insulation and feel, for less money." }
       ]
+    },
+
+    {
+      "id": "nyx-butter-gloss",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Butter Gloss", "brand": "NYX", "price": 6 },
+      "original": { "name": "Gloss Bomb Universal Lip Luminizer", "brand": "Fenty Beauty", "price": 24 },
+      "summary": "A cult drugstore gloss — cushiony, non-sticky shine in a huge shade range, long compared to Fenty's Gloss Bomb for a quarter of the price.",
+      "caveat": "Thinner and less long-wearing than Gloss Bomb; the shimmer payoff is more subtle.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=NYX+Butter+Gloss+vs+Fenty+Gloss+Bomb+dupe+review", "takeaway": "Widely loved budget gloss often named a Gloss Bomb alternative — comfy, glossy, great shade range." } ]
+    },
+    {
+      "id": "maybelline-fit-me",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Fit Me Matte + Poreless Foundation", "brand": "Maybelline", "price": 9 },
+      "original": { "name": "Studio Fix Fluid Foundation", "brand": "MAC", "price": 37 },
+      "summary": "A long-standing drugstore staple — matte, natural-coverage foundation widely compared to MAC Studio Fix for a quarter of the price.",
+      "caveat": "MAC has more shades and a touch more coverage; Fit Me can oxidize slightly, so pick a shade lighter.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Maybelline+Fit+Me+vs+MAC+Studio+Fix+dupe+review", "takeaway": "A perennial drugstore-vs-MAC pick: similar matte finish and wear at a fraction of the price." } ]
+    },
+    {
+      "id": "milani-luminoso",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Baked Blush in Luminoso", "brand": "Milani", "price": 9 },
+      "original": { "name": "Blush in Orgasm", "brand": "NARS", "price": 30 },
+      "summary": "One of the most-cited dupes in beauty — the peachy-pink, gold-shimmer 'Orgasm' glow for under a third of the price.",
+      "caveat": "Milani is a touch more pigmented; NARS has slightly finer shimmer. Apply with a light hand.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Milani+Luminoso+vs+NARS+Orgasm+dupe+review", "takeaway": "A decades-old classic dupe — beauty editors repeatedly call Luminoso the drugstore Orgasm." } ]
+    },
+    {
+      "id": "loreal-infallible",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Infallible Fresh Wear 24HR Foundation", "brand": "L'Oreal", "price": 15 },
+      "original": { "name": "Double Wear Stay-in-Place Foundation", "brand": "Estee Lauder", "price": 48 },
+      "summary": "A full-coverage, long-wear foundation widely named the drugstore Double Wear — matte, transfer-resistant, lasts all day.",
+      "caveat": "Estee Lauder edges it for very oily skin and shade range; L'Oreal feels a little more natural.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=LOreal+Infallible+Fresh+Wear+vs+Estee+Lauder+Double+Wear+dupe+review", "takeaway": "Frequently named the best drugstore Double Wear alternative for full coverage and long wear." } ]
+    },
+    {
+      "id": "ordinary-niacinamide",
+      "category": "makeup",
+      "verdict": "pass",
+      "rating": 4.5,
+      "dupe": { "name": "Niacinamide 10% + Zinc 1%", "brand": "The Ordinary", "price": 6 },
+      "original": { "name": "10% Niacinamide Booster", "brand": "Paula's Choice", "price": 44 },
+      "summary": "A skincare staple — high-strength niacinamide for oil control and pore appearance, at a fraction of premium boosters.",
+      "caveat": "The Ordinary's formula can pill under makeup; Paula's Choice has more cosmetic elegance. Not identical ingredient decks.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=The+Ordinary+Niacinamide+vs+Paulas+Choice+niacinamide+review", "takeaway": "Strong consensus as an effective, very affordable niacinamide alternative." } ]
+    },
+    {
+      "id": "oldnavy-aritzia-sweater",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Rib-Knit Mockneck Sweater", "brand": "Old Navy", "price": 35 },
+      "original": { "name": "Ribbed Wool Sweater", "brand": "Aritzia", "price": 98 },
+      "summary": "A close, budget take on Aritzia's viral ribbed-knit look — the same fitted mockneck silhouette for about a third of the price.",
+      "caveat": "Synthetic/cotton blend vs Aritzia's wool — less warm and may pill sooner.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Old+Navy+ribbed+sweater+Aritzia+dupe+review", "takeaway": "Commonly cited as an affordable stand-in for Aritzia's ribbed knits; the trade-off is fabric quality." } ]
+    },
+    {
+      "id": "amazon-everlane-tee",
+      "category": "clothing",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Essential Crewneck T-Shirt", "brand": "Amazon Essentials", "price": 10 },
+      "original": { "name": "The Perfect Tee", "brand": "Everlane", "price": 30 },
+      "summary": "A solid everyday basic tee at a third of Everlane's price — good weight and fit for the cost.",
+      "caveat": "Everlane's cotton is a bit more durable and holds shape longer; the Amazon tee can shrink slightly.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Amazon+Essentials+tee+vs+Everlane+Perfect+Tee+review", "takeaway": "Frequently recommended as a great-value basic tee versus pricier wardrobe staples." } ]
+    },
+    {
+      "id": "cuisinart-breville-airfryer",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "Air Fryer Toaster Oven", "brand": "Cuisinart", "price": 199 },
+      "original": { "name": "Smart Oven Air Fryer", "brand": "Breville", "price": 350 },
+      "summary": "A capable air-fryer toaster oven that covers most of what Breville's Smart Oven does — bake, toast, air-fry — for well under the premium price.",
+      "caveat": "Breville's presets, build and even-cooking are more refined; Cuisinart's interface is simpler.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Cuisinart+air+fryer+toaster+oven+vs+Breville+Smart+Oven+review", "takeaway": "Rated a strong-value alternative to Breville's pricier smart ovens for most home cooks." } ]
+    },
+    {
+      "id": "amazon-apple-charger",
+      "category": "appliances",
+      "verdict": "pass",
+      "rating": 4.0,
+      "dupe": { "name": "20W USB-C Wall Charger", "brand": "Amazon Basics", "price": 12 },
+      "original": { "name": "20W USB-C Power Adapter", "brand": "Apple", "price": 19 },
+      "summary": "Meets the same USB-C Power Delivery spec and charges iPhones at the same speed as Apple's adapter — functionally identical for less.",
+      "caveat": "Modest savings and a plastic-shell build vs Apple's finish; check for proper safety certification on any third-party charger.",
+      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Amazon+Basics+20W+USB-C+charger+vs+Apple+review", "takeaway": "Tech reviewers confirm same-spec PD charging and identical iPhone charge speeds." } ]
     },
 
     {

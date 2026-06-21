@@ -8,6 +8,7 @@ const CATS = {
 
 let DATA = { passes: [], rejects: [], meta: {} };
 let activeCat = "all";
+let searchQuery = "";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -61,10 +62,22 @@ function renderFilters() {
 }
 
 function renderGrid() {
-  const list = activeCat === "all" ? DATA.passes : DATA.passes.filter((d) => d.category === activeCat);
+  let list = activeCat === "all" ? DATA.passes : DATA.passes.filter((d) => d.category === activeCat);
+  
+  // Apply search filter if query exists
+  if (searchQuery.trim()) {
+    const query = searchQuery.toLowerCase();
+    list = list.filter((d) => 
+      d.dupe.name.toLowerCase().includes(query) ||
+      d.dupe.brand.toLowerCase().includes(query) ||
+      d.original.name.toLowerCase().includes(query) ||
+      d.original.brand.toLowerCase().includes(query)
+    );
+  }
+  
   $("#grid").innerHTML = list.map(card).join("");
   $("#resultsNote").textContent =
-    `Showing ${list.length} review-vetted ${activeCat === "all" ? "" : CATS[activeCat].label.toLowerCase() + " "}dupe${list.length === 1 ? "" : "s"} — each one passed the check.`;
+    `Showing ${list.length} review-vetted ${activeCat === "all" ? "" : CATS[activeCat].label.toLowerCase() + " "}dupe${list.length === 1 ? "" : "s"}${searchQuery.trim() ? ` matching "${searchQuery}"` : ""} — each one passed the check.`;
 }
 
 function renderRejects() {
@@ -118,6 +131,12 @@ $("#rejectsToggle").addEventListener("click", () => {
   const open = g.hidden;
   g.hidden = !open;
   $("#rejectsToggle").setAttribute("aria-expanded", String(open));
+});
+
+// Search functionality
+$("#searchInput").addEventListener("input", (e) => {
+  searchQuery = e.target.value;
+  renderGrid();
 });
 
 fetch("data.json")

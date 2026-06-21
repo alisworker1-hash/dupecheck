@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DupeCheck — only review-vetted dupes</title>
   <meta name="description" content="Affordable dupes for makeup, shoes, clothing and appliances — every one checked against real reviews. We hide the ones that don't pass." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%230f9d76' d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg>" type="image/svg+xml" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="DupeCheck — only review-vetted dupes" />
+  <meta property="og:description" content="Affordable dupes for makeup, shoes, clothing and appliances — every one checked against real reviews. We hide the ones that don't pass." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dupecheck.example.com" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DupeCheck — only review-vetted dupes" />
+  <meta name="twitter:description" content="Affordable dupes for makeup, shoes, clothing and appliances — every one checked against real reviews. We hide the ones that don't pass." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <header class="site-header">
@@ -27,6 +37,10 @@
 
   <main class="wrap">
     <nav class="filters" id="filters" aria-label="Categories"></nav>
+
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search dupes by name or brand..." class="search-input" />
+    </div>
 
     <p class="results-note" id="resultsNote"></p>
     <div class="grid" id="grid"></div>
@@ -58,6 +72,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
