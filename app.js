@@ -20,24 +20,38 @@ function stars(rating) {
   return `<span class="stars">${"★".repeat(full)}${"☆".repeat(5 - full)}<small>${rating.toFixed(1)}</small></span>`;
 }
 
+// Real product photo when we have one; on load failure it removes itself and
+// the category gradient + emoji behind it shows through as a graceful fallback.
+function thumbImg(p) {
+  if (!p || !p.img) return "";
+  const alt = `${p.brand} ${p.name}`;
+  return `<img class="thumb-img" src="${esc(p.img)}" alt="${esc(alt)}" loading="lazy" decoding="async" onerror="this.remove()" />`;
+}
+
 function card(d) {
   const isReject = d.verdict === "reject";
+  const cat = CATS[d.category] || {};
   return `
   <button class="card" data-id="${esc(d.id)}">
-    <div class="card-top">
-      <span class="cat-tag">${CATS[d.category]?.icon || ""} ${CATS[d.category]?.label || d.category}</span>
+    <div class="card-thumb thumb-${esc(d.category)}">
+      ${thumbImg(d.dupe)}
+      <span class="thumb-emoji" aria-hidden="true">${cat.icon || "🛍️"}</span>
+      <span class="thumb-brand">${esc(d.dupe.brand)}</span>
       <span class="badge ${isReject ? "reject" : "pass"}">${isReject ? "✕ Rejected" : "✓ Review-vetted"}</span>
     </div>
-    <h3>${esc(d.dupe.brand)} ${esc(d.dupe.name)}</h3>
-    <p class="dupe-for">${isReject ? "Sold as a dupe for" : "Dupe for"} <b>${esc(d.original.brand)} ${esc(d.original.name)}</b></p>
-    <div class="price-row">
-      <span class="price-dupe">${money(d.dupe.price)}</span>
-      <span class="price-orig">${money(d.original.price)}</span>
-      <span class="save">save ${savings(d)}%</span>
-    </div>
-    <div class="card-foot">
-      ${stars(d.rating)}
-      <span class="see">${isReject ? "Why it failed →" : "See reviews →"}</span>
+    <div class="card-body">
+      <span class="cat-tag">${esc(cat.label || d.category)}</span>
+      <h3>${esc(d.dupe.brand)} ${esc(d.dupe.name)}</h3>
+      <p class="dupe-for">${isReject ? "Sold as a dupe for" : "Dupe for"} <b>${esc(d.original.brand)} ${esc(d.original.name)}</b></p>
+      <div class="price-row">
+        <span class="price-dupe">${money(d.dupe.price)}</span>
+        <span class="price-orig">${money(d.original.price)}</span>
+        <span class="save">save ${savings(d)}%</span>
+      </div>
+      <div class="card-foot">
+        ${stars(d.rating)}
+        <span class="see">${isReject ? "Why it failed →" : "See reviews →"}</span>
+      </div>
     </div>
   </button>`;
 }
@@ -98,6 +112,8 @@ function renderRejects() {
 
 function openModal(d) {
   const isReject = d.verdict === "reject";
+  const cat = CATS[d.category] || {};
+  const icon = cat.icon || "🛍️";
   const reviews = (d.reviews || []).map((r) => `
     <div class="review">
       <div class="src"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.source)}</a><span class="ext">source ↗</span></div>
@@ -112,9 +128,15 @@ function openModal(d) {
     </div>
     <h2 id="modalTitle">${esc(d.dupe.brand)} ${esc(d.dupe.name)}</h2>
     <div class="m-compare">
-      <div class="col dupe"><small>The dupe</small><div class="name">${esc(d.dupe.brand)} ${esc(d.dupe.name)}</div><div class="p">${money(d.dupe.price)}</div></div>
+      <div class="col dupe">
+        <div class="m-thumb thumb-${esc(d.category)}">${thumbImg(d.dupe)}<span aria-hidden="true">${icon}</span></div>
+        <small>The dupe</small><div class="name">${esc(d.dupe.brand)} ${esc(d.dupe.name)}</div><div class="p">${money(d.dupe.price)}</div>
+      </div>
       <div class="vs">vs</div>
-      <div class="col"><small>The original</small><div class="name">${esc(d.original.brand)} ${esc(d.original.name)}</div><div class="p">${money(d.original.price)}</div></div>
+      <div class="col orig">
+        <div class="m-thumb m-thumb-orig">${thumbImg(d.original)}<span aria-hidden="true">${icon}</span></div>
+        <small>The original</small><div class="name">${esc(d.original.brand)} ${esc(d.original.name)}</div><div class="p">${money(d.original.price)}</div>
+      </div>
     </div>
     <p class="m-save">You save about ${money(d.original.price - d.dupe.price)} (${savings(d)}%)</p>
     <p class="m-summary">${esc(d.summary)}</p>
@@ -150,7 +172,7 @@ $("#searchInput").addEventListener("input", (e) => {
   renderGrid();
 });
 
-fetch("data.json")
+fetch("data.json", { cache: "no-cache" })
   .then((r) => r.json())
   .then((json) => {
     DATA.meta = json.meta || {};

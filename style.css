@@ -93,8 +93,8 @@ a { color: inherit; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 18px; cursor: pointer; transition: .18s; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; gap: 12px; text-align: left;
+  padding: 0; cursor: pointer; transition: .18s; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 0; text-align: left; overflow: hidden;
   animation: cardSlideIn 0.4s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
@@ -122,11 +122,26 @@ a { color: inherit; }
 .card:nth-child(15) { animation-delay: 0.75s; }
 .card:nth-child(n+16) { animation-delay: 0.8s; }
 .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: #cfe7df; }
-.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
-.cat-tag { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); background: var(--bg); border: 1px solid var(--line); padding: 4px 9px; border-radius: 6px; }
+.card:hover .thumb-emoji { transform: scale(1.08); }
+
+/* Generated card thumbnail (no external images) */
+.card-thumb { position: relative; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; overflow: hidden; }
+.card-thumb::after { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.35), transparent 70%); pointer-events: none; }
+.thumb-emoji { font-size: 46px; line-height: 1; filter: drop-shadow(0 4px 8px rgba(20,40,30,.16)); transition: transform .18s ease; }
+/* Real product photo sits on top of the gradient/emoji fallback */
+.thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; padding: 8px; z-index: 1; }
+.card:hover .thumb-img { transform: scale(1.04); transition: transform .25s ease; }
+.thumb-brand { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: rgba(21,32,28,.5); max-width: 82%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.thumb-makeup     { background: linear-gradient(135deg, #ffe3ec, #ffd3c9); }
+.thumb-shoes      { background: linear-gradient(135deg, #e7ebf6, #d3dcef); }
+.thumb-clothing   { background: linear-gradient(135deg, #d8f3ea, #c6e8f1); }
+.thumb-appliances { background: linear-gradient(135deg, #ffeccf, #ffe1c4); }
+.card-body { display: flex; flex-direction: column; gap: 12px; padding: 18px; flex: 1; }
+.cat-tag { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); background: var(--bg); border: 1px solid var(--line); padding: 4px 9px; border-radius: 6px; align-self: flex-start; }
 .badge { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; white-space: nowrap; border: 1px solid transparent; }
 .badge.pass { background: rgba(15,157,118,.08); color: var(--accent-dark); border-color: rgba(15,157,118,.22); }
 .badge.reject { background: var(--warn-soft); color: var(--warn); border-color: rgba(194,65,12,.22); }
+.card-thumb .badge { position: absolute; top: 12px; right: 12px; z-index: 2; background: rgba(255,255,255,.9); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); box-shadow: 0 1px 4px rgba(20,40,30,.14); }
 .card h3 { font-size: 18px; font-weight: 600; letter-spacing: -.01em; line-height: 1.25; }
 .dupe-for { font-size: 13.5px; color: var(--ink-soft); }
 .dupe-for b { color: var(--ink); font-weight: 600; }
@@ -139,13 +154,17 @@ a { color: inherit; }
 .stars small { color: var(--ink-soft); margin-left: 6px; letter-spacing: 0; }
 .see { font-size: 13px; font-weight: 600; color: var(--accent-dark); }
 
-/* Rejects */
-.rejects { margin: 56px 0 10px; border-top: 1px dashed var(--line); padding-top: 40px; }
-.rejects-toggle { display: flex; align-items: center; gap: 10px; background: none; border: none; font: inherit; font-size: 20px; font-weight: 700; letter-spacing: -.02em; cursor: pointer; color: var(--ink); padding: 0; }
-.rejects-toggle .chev { transition: .2s; color: var(--ink-soft); font-size: 16px; }
+/* Rejects — kept discreet: a quiet disclosure under a thin divider */
+.rejects { margin: 40px 0 0; border-top: 1px solid var(--line); padding-top: 16px; text-align: center; }
+.rejects-toggle { display: inline-flex; align-items: center; gap: 7px; background: none; border: none; font: inherit; font-size: 13.5px; font-weight: 600; letter-spacing: 0; cursor: pointer; color: var(--ink-soft); padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+.rejects-toggle:hover { color: var(--ink); background: var(--bg); }
+.rejects-toggle .chev { transition: .2s; font-size: 11px; }
 .rejects-toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
-.rejects-intro { color: var(--ink-soft); font-size: 14px; margin: 8px 0 18px; max-width: 60ch; }
+.rejects-intro { color: var(--ink-soft); font-size: 13.5px; margin: 8px auto 20px; max-width: 56ch; }
+.rejects-toggle[aria-expanded="false"] + .rejects-intro { display: none; }
+.rejects-grid { text-align: left; }
 .rejects-grid .card { background: linear-gradient(180deg, var(--surface), var(--reject-tint)); border-color: rgba(194,65,12,.14); }
+.rejects-grid .card-thumb { filter: grayscale(.4) opacity(.92); }
 .rejects-grid .card:hover { border-color: #f0d3c2; }
 
 /* Modal */
@@ -155,7 +174,14 @@ a { color: inherit; }
 .modal-close:hover { color: var(--ink); }
 .m-head { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 4px; }
 .modal h2 { font-size: 24px; font-weight: 700; letter-spacing: -.02em; margin: 6px 0; padding-right: 30px; }
-.m-compare { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 16px 0; }
+.m-compare { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: stretch; background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 16px 0; }
+.m-compare .col { display: flex; flex-direction: column; }
+.m-thumb { position: relative; overflow: hidden; height: 58px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 30px; line-height: 1; margin-bottom: 10px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
+.m-thumb .thumb-img { padding: 5px; border-radius: inherit; }
+.m-thumb span { filter: drop-shadow(0 2px 4px rgba(20,40,30,.18)); }
+.m-thumb-orig { background: linear-gradient(135deg, #2b2f3a, #181a22); box-shadow: inset 0 0 0 1px rgba(214,178,112,.45); }
+.m-thumb-orig span { filter: drop-shadow(0 2px 5px rgba(0,0,0,.4)) grayscale(.15); }
+.m-compare .col.orig small { color: #b8924e; }
 .m-compare .col small { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); font-weight: 600; }
 .m-compare .col .name { font-weight: 600; font-size: 14px; margin: 3px 0; }
 .m-compare .col .p { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -199,7 +225,9 @@ a { color: inherit; }
   .stats { gap: 8px; }
   .stat { min-width: auto; flex: 1; }
   .search-input { font-size: 16px; } /* Prevent zoom on iOS */
-  .card { padding: 14px; }
+  .card-body { padding: 14px; }
+  .card-thumb { height: 128px; }
+  .thumb-emoji { font-size: 40px; }
   .price-dupe { font-size: 22px; }
   .modal { padding: 20px; }
 }
@@ -255,4 +283,11 @@ a { color: inherit; }
   .search-input { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%239fb0a8' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-5.2-5.2M17 10a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E"); }
   .card:hover { border-color: #2f5547; }
   .modal-backdrop { background: rgba(0,0,0,.6); }
+  .thumb-makeup     { background: linear-gradient(135deg, #3a2731, #271c24); }
+  .thumb-shoes      { background: linear-gradient(135deg, #232c3b, #1a2230); }
+  .thumb-clothing   { background: linear-gradient(135deg, #173029, #122a2f); }
+  .thumb-appliances { background: linear-gradient(135deg, #3a2e1c, #2a2114); }
+  .thumb-brand { color: rgba(238,243,241,.5); }
+  .card-thumb::after { background: radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.06), transparent 70%); }
+  .card-thumb .badge { background: rgba(15,22,18,.82); box-shadow: 0 1px 4px rgba(0,0,0,.4); }
 }
