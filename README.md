@@ -6,6 +6,11 @@ but only the ones that **pass a real review check**. Dupes that fail are shown i
 
 **Live:** https://alisworker1-hash.github.io/dupecheck/
 
+## Why this exists
+A small proof of a specific discipline: showing the rejects, not just the winners.
+Every dupe here — pass or reject — has its sourcing and reasoning in `data.json`,
+so the verdict is checkable, not just asserted.
+
 ## How the vetting works
 Each dupe is researched against real reviews from multiple independent sources. A dupe is only
 listed as **review-vetted** if it has consistent positive reviews (composite ≈ 4/5 or better,
