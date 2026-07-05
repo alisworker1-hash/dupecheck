@@ -23,5 +23,9 @@ jobs:
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --exclude-mail './**/*.html'
+          # Newer lychee (shipped by lychee-action v2) dropped `--exclude-mail`;
+          # mailto: links are excluded by default now, so the flag is both
+          # invalid (it aborted the run with exit 2 before checking anything)
+          # and unnecessary. The site has no mailto links regardless.
+          args: --no-progress './**/*.html'
           fail: true
