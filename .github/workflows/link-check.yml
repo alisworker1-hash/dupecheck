@@ -20,6 +20,17 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
+      - name: Extract data.json image URLs
+        # Product image URLs live in data.json, injected into the DOM by
+        # app.js at runtime — the *.html glob below never sees them, so a
+        # dead product photo can ship while this workflow stays green.
+        # Rejected dupes intentionally have a null img (no photo, gradient
+        # fallback shows through — see app.js's onerror handler), so those
+        # are filtered out here rather than checked as broken links.
+        run: |
+          jq -r '.dupes[] | .dupe.img, .original.img | select(. != null)' data.json > data-image-urls.txt
+          wc -l data-image-urls.txt
+
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
@@ -27,5 +38,11 @@ jobs:
           # mailto: links are excluded by default now, so the flag is both
           # invalid (it aborted the run with exit 2 before checking anything)
           # and unnecessary. The site has no mailto links regardless.
-          args: --no-progress './**/*.html'
+          # --user-agent: several product CDNs (Amazon, Target, Nordstrom)
+          # hotlink-block generic clients and return connect failures to a
+          # bare request — a real UA avoids false-positive "dead" images.
+          args: >-
+            --no-progress
+            --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+            './**/*.html' data-image-urls.txt
           fail: true
