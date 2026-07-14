@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-06-21",
+    "updated": "2026-07-11",
     "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason. Entries marked 'Consensus across reviews' summarize the well-documented review consensus with a search link; individually-cited entries link the specific articles.",
     "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
   },
@@ -57,7 +57,8 @@
       "summary": "One of the most-recommended Dior Lip Glow Oil dupes: a non-sticky, tinted, hydrating shine for about a fifth of the price.",
       "caveat": "Dior is slightly more cushiony and longer-wearing; the e.l.f. shades lean a touch sheerer.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=e.l.f.+Glow+Reviver+Lip+Oil+vs+Dior+Lip+Glow+Oil+dupe+review", "takeaway": "Widely cited as the best budget Dior Lip Glow Oil dupe — similar glossy, hydrating tint without the stickiness." }
+        { "source": "SheKnows", "url": "https://www.sheknows.com/living/articles/1234733241/elf-cosmetics-glow-reviver-lip-oil/", "takeaway": "Rounds up shopper reactions calling the $6-8 e.l.f. oil \"just like\" (some say even better than) Dior's Lip Glow Oil — glossy, tinted, hydrating, for a fraction of the price." },
+        { "source": "Grey Seal Beauty", "url": "https://greysealbeauty.com/blogs/news/lip-oil-showdown-elf-glow-reviver-vs-dior-lip-glow", "takeaway": "Direct side-by-side: Dior is thicker/more cushiony with slightly more staying power, e.l.f. is lighter and more pigmented — concludes e.l.f. is an excellent budget-friendly alternative, not identical but very close." }
       ]
     },
     {
@@ -70,7 +71,7 @@
       "summary": "A long-standing drugstore staple that locks makeup in place for hours at a quarter of the price.",
       "caveat": "Urban Decay still edges it for all-day wear in heat/humidity; NYX is the better everyday value.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=NYX+Matte+Finish+setting+spray+vs+Urban+Decay+All+Nighter+dupe+review", "takeaway": "Long regarded as a solid All Nighter alternative for normal wear; UD wins only on extreme longevity." }
+        { "source": "Brandefy", "url": "https://brandefyskin.com/blogs/beauty/nyx-matte-finish-makeup-setting-spray-vs-urban-decay", "takeaway": "Head-to-head test found Urban Decay only \"a touch more mattifying\"; reviewer's verdict was to switch to NYX to save for near-equivalent all-day wear at roughly a quarter the price." }
       ]
     },
     {
@@ -83,7 +84,7 @@
       "summary": "A cult drugstore lengthener that beats many high-end mascaras for length and lift — repeatedly out-performs pricier ones in head-to-heads.",
       "caveat": "Can clump if over-applied; wipe the wand. Removal needs a good cleanser.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Maybelline+Sky+High+mascara+vs+high+end+dupe+review", "takeaway": "Frequently rated as good as or better than mascaras 2–3× the price for dramatic length." }
+        { "source": "When I'm Older", "url": "https://when-im-older.com/maybelline-lash-sensational-sky-high-mascara-otherwise-known-as-the-tiktok-mascara/", "takeaway": "Reviewer directly rates Sky High \"on par to the Benefit Roller Lash Mascara\" for length and lift, at a fraction of the price." }
       ]
     },
 
@@ -138,7 +139,8 @@
       "summary": "The viral Birkenstock Boston clog look for a quarter of the price, with the same cork-footbed silhouette and slip-on ease.",
       "caveat": "Footbed is firmer and less anatomically contoured than a real Birk; sizing runs small.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Birkenstock+Boston+clog+dupe+review+worth+it", "takeaway": "Popular Boston-clog look-alike; reviewers like the price and look, with the usual 'less contoured footbed' trade-off." }
+        { "source": "topsfordays", "url": "https://topsfordays.com/blogs/fashion/birkenstock-boston-clog-alternatives", "takeaway": "Hands-on review of the Cushionaire Hana clog says it looks \"almost identical to the original Birkenstock Boston\" and is a solid option for the classic look, docking it only for weaker outsole grip." },
+        { "source": "dupeVS", "url": "https://dupevs.com/birkenstocks-alternatives/", "takeaway": "Independent dupe roundup calls the Cushionaire Hana cork clog a top Boston-style pick that \"really gets the Birkenstock Boston look down perfect,\" at $35-65 vs. Birkenstock's ~$140-160." }
       ]
     },
 
@@ -179,7 +181,8 @@
       "summary": "The most-recommended Align dupe by a mile: buttery-soft, squat-proof and flattering for under a third of the price.",
       "caveat": "Lululemon's Align is still slightly softer/more weightless; CRZ runs a touch more compressive (some size up).",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=CRZ+Yoga+Butterluxe+vs+Lululemon+Align+dupe+review", "takeaway": "Repeatedly named the top Align alternative — near-identical buttery feel, squat-proof, a fraction of the price." }
+        { "source": "That Fit Friend", "url": "https://thatfitfriend.com/crz-yoga-butterluxe-legging-review/", "takeaway": "Calls CRZ YOGA Butterluxe \"one of the best Align alternatives\" tested — fit and feel are nearly identical to Align, with slightly more compression, for about a third of the price." },
+        { "source": "BrightonTheDay", "url": "https://brightontheday.com/lululemon-align-vs-the-viral-amazon-leggings/", "takeaway": "Says the dupe is \"shockingly close\"; Align still wins on the lightest feel, but Butterluxe is a very solid choice with better pilling resistance at $30-40 vs. $98+." }
       ]
     },
     {
@@ -192,7 +195,8 @@
       "summary": "The famous 'Amazon Coat' — genuinely warm real-down parka that went viral as a budget stand-in for $1,000+ luxury down, with tens of thousands of reviews.",
       "caveat": "Heavier and less refined/tailored than luxury down; fit runs boxy (many size down).",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Orolay+Amazon+coat+review+worth+it+vs+luxury+down", "takeaway": "Long-running viral pick: seriously warm real-down warmth for a fraction of luxury parkas; the trade-off is bulk and a less premium finish." }
+        { "source": "CNBC", "url": "https://www.cnbc.com/2019/02/21/why-the-amazon-coat-from-orolay-is-a-must-have-for-us-consumers.html", "takeaway": "Orolay's parka runs about one-tenth the price of Canada Goose and Moncler yet was Amazon's top-selling women's down coat two years running." },
+        { "source": "Yicai Global", "url": "https://www.yicaiglobal.com/news/amazon-coat-made-by-chinese-pair-knocks-stuffing-out-of-canada-goose", "takeaway": "Business-press piece framing Orolay as outselling premium rivals like Canada Goose by combining comparable warmth and fashion appeal at a fraction of the cost." }
       ]
     },
     {
@@ -248,7 +252,8 @@
       "summary": "The most-recommended Airwrap alternative: same Coanda-style auto-wrap curls, and it doubles as a powerful standalone hair dryer — for about half.",
       "caveat": "Heavier in the hand and the attachments differ slightly; Dyson is quieter and more polished.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Shark+FlexStyle+vs+Dyson+Airwrap+review+worth+it", "takeaway": "Repeatedly named the best Airwrap dupe — comparable curls and a stronger dryer mode at roughly half the price." }
+        { "source": "The New Knew", "url": "https://thenewknew.com/shark-flexstyle-vs-dyson-airwrap/", "takeaway": "15-category head-to-head scores Shark FlexStyle 9 to Dyson's 8 overall; author's conclusion: get the FlexStyle if you don't want to spend the extra money." },
+        { "source": "My Life From Home", "url": "https://mylifefromhome.com/dyson-airwrap-vs-shark-flexstyle-review/", "takeaway": "3-year long-term test calls Shark \"a legitimate alternative to the Dyson, not an inferior knockoff\"; author still uses hers daily and saved roughly £300." }
       ]
     },
     {
@@ -261,7 +266,8 @@
       "summary": "Same 40oz handled-tumbler format, strong insulation and dozens of colors — a well-reviewed Stanley Quencher stand-in for nearly half.",
       "caveat": "Stanley's lid/straw and long-term durability have a slight edge; otherwise very close.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Simple+Modern+Trek+vs+Stanley+Quencher+tumbler+review", "takeaway": "Frequently rated as good as the Stanley Quencher on insulation and feel, for less money." }
+        { "source": "Ayana Lage", "url": "https://ayanalage.com/simple-modern-40oz-tumbler/", "takeaway": "Nearly half the price of the Stanley H2.0 FlowState, lighter, better sideways leak resistance, comparable insulation — \"I'd pay more for the Simple Modern cup.\"" },
+        { "source": "The Daily Beast", "url": "https://www.thedailybeast.com/simple-modern-tumbler-vs-stanley", "takeaway": "Names Simple Modern \"the superior choice for style, functionality, and insulation\" at $30 vs. Stanley's $45." }
       ]
     },
 
@@ -274,7 +280,9 @@
       "original": { "name": "Gloss Bomb Universal Lip Luminizer", "brand": "Fenty Beauty", "price": 24, "img": "https://media.ulta.com/i/ulta/2592395" },
       "summary": "A cult drugstore gloss — cushiony, non-sticky shine in a huge shade range, long compared to Fenty's Gloss Bomb for a quarter of the price.",
       "caveat": "Thinner and less long-wearing than Gloss Bomb; the shimmer payoff is more subtle.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=NYX+Butter+Gloss+vs+Fenty+Gloss+Bomb+dupe+review", "takeaway": "Widely loved budget gloss often named a Gloss Bomb alternative — comfy, glossy, great shade range." } ]
+      "reviews": [
+        { "source": "Bustle", "url": "https://www.bustle.com/style/best-fenty-gloss-bomb-dupes", "takeaway": "Names NYX Butter Gloss as a dupe with better color payoff and a similar lacquered-shine effect without shimmer, for a fraction of Fenty Gloss Bomb's price." }
+      ]
     },
     {
       "id": "maybelline-fit-me",
@@ -285,7 +293,9 @@
       "original": { "name": "Studio Fix Fluid Foundation", "brand": "MAC", "price": 37, "img": "https://media.ulta.com/i/ulta/2622206" },
       "summary": "A long-standing drugstore staple — matte, natural-coverage foundation widely compared to MAC Studio Fix for a quarter of the price.",
       "caveat": "MAC has more shades and a touch more coverage; Fit Me can oxidize slightly, so pick a shade lighter.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Maybelline+Fit+Me+vs+MAC+Studio+Fix+dupe+review", "takeaway": "A perennial drugstore-vs-MAC pick: similar matte finish and wear at a fraction of the price." } ]
+      "reviews": [
+        { "source": "Daily Dose of Devon", "url": "https://dailydoseofdevon.weebly.com/blog/mac-studio-fix-vs-maybelline-fit-me-matte-poreless-foundations", "takeaway": "Head-to-head wear test rated Maybelline Fit Me Matte + Poreless a 10/10 for shade match and oil control, while MAC Studio Fix oxidized orange and failed to control oil despite claims." }
+      ]
     },
     {
       "id": "milani-luminoso",
@@ -296,7 +306,9 @@
       "original": { "name": "Blush in Orgasm", "brand": "NARS", "price": 30, "img": "https://media.ulta.com/i/ulta/2621261" },
       "summary": "One of the most-cited dupes in beauty — the peachy-pink, gold-shimmer 'Orgasm' glow for under a third of the price.",
       "caveat": "Milani is a touch more pigmented; NARS has slightly finer shimmer. Apply with a light hand.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Milani+Luminoso+vs+NARS+Orgasm+dupe+review", "takeaway": "A decades-old classic dupe — beauty editors repeatedly call Luminoso the drugstore Orgasm." } ]
+      "reviews": [
+        { "source": "Analisa MUA", "url": "https://analisamua.wordpress.com/2019/01/23/splurge-or-save-nars-orgasm-vs-milani-luminoso/", "takeaway": "Direct swatch-and-wear comparison concludes \"I would choose save\" — both blushes give a similar glow with ~7 hours of wear, colors close enough once applied lightly." }
+      ]
     },
     {
       "id": "loreal-infallible",
@@ -307,7 +319,9 @@
       "original": { "name": "Double Wear Stay-in-Place Foundation", "brand": "Estee Lauder", "price": 48, "img": "https://media.ulta.com/i/ulta/2309427" },
       "summary": "A full-coverage, long-wear foundation widely named the drugstore Double Wear — matte, transfer-resistant, lasts all day.",
       "caveat": "Estee Lauder edges it for very oily skin and shade range; L'Oreal feels a little more natural.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=LOreal+Infallible+Fresh+Wear+vs+Estee+Lauder+Double+Wear+dupe+review", "takeaway": "Frequently named the best drugstore Double Wear alternative for full coverage and long wear." } ]
+      "reviews": [
+        { "source": "A Beauty Edit", "url": "https://www.abeautyedit.com/estee-lauder-double-wear-foundation-dupes/", "takeaway": "Names L'Oreal Infallible Fresh Wear 24HR as a top Double Wear dupe (\"Best Shade Range,\" 40 shades) with comparable buildable coverage and 24-hour transfer resistance, plus SPF 25 which Double Wear lacks." }
+      ]
     },
     {
       "id": "ordinary-niacinamide",
@@ -318,7 +332,9 @@
       "original": { "name": "10% Niacinamide Booster", "brand": "Paula's Choice", "price": 44, "img": "https://n.nordstrommedia.com/it/f3450525-133b-48e8-9136-1e015aeba71a.jpeg?crop=pad&w=780&h=1196" },
       "summary": "A skincare staple — high-strength niacinamide for oil control and pore appearance, at a fraction of premium boosters.",
       "caveat": "The Ordinary's formula can pill under makeup; Paula's Choice has more cosmetic elegance. Not identical ingredient decks.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=The+Ordinary+Niacinamide+vs+Paulas+Choice+niacinamide+review", "takeaway": "Strong consensus as an effective, very affordable niacinamide alternative." } ]
+      "reviews": [
+        { "source": "My Dad the Chemist", "url": "https://www.mydadthechemist.com/reviews/the-ordinary-niacinamide-zinc-review/", "takeaway": "Recommends The Ordinary over Paula's Choice on value — same 10% niacinamide concentration plus zinc PCA at roughly a seventh of the price." }
+      ]
     },
     {
       "id": "oldnavy-aritzia-sweater",
@@ -351,7 +367,9 @@
       "original": { "name": "Smart Oven Air Fryer", "brand": "Breville", "price": 350, "img": "https://target.scene7.com/is/image/Target/GUEST_f7f7761d-a0c1-4fb2-9b2c-b7b8ade2c591?wid=800&hei=800&fmt=pjpeg" },
       "summary": "A capable air-fryer toaster oven that covers most of what Breville's Smart Oven does — bake, toast, air-fry — for well under the premium price.",
       "caveat": "Breville's presets, build and even-cooking are more refined; Cuisinart's interface is simpler.",
-      "reviews": [ { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Cuisinart+air+fryer+toaster+oven+vs+Breville+Smart+Oven+review", "takeaway": "Rated a strong-value alternative to Breville's pricier smart ovens for most home cooks." } ]
+      "reviews": [
+        { "source": "Shouldit", "url": "https://shouldit.com/toaster-ovens/compare/cuisinart-toa-60-air-fryer-vs-breville-smart-oven-pro/", "takeaway": "Independent hands-on testing found the Cuisinart TOA-60 beat the Breville Smart Oven Pro on toasting, roasting, pizza, and air-fry results, while costing $24 less." }
+      ]
     },
     {
       "id": "amazon-apple-charger",
@@ -418,7 +436,7 @@
       "caveat": "For a real alternative, the Shark FlexStyle (listed above) is the vetted pick — not the $40 marketplace clones.",
       "reasons": ["Overheating / hair-damage & safety reports", "Airflow too weak to actually curl"],
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=cheap+Dyson+Airwrap+dupe+overheating+bad+review", "takeaway": "The ultra-cheap clones are widely flagged for overheating and ineffective curling — the opposite of a safe dupe." }
+        { "source": "Electrical Safety First (UK)", "url": "https://www.electricalsafetyfirst.org.uk/product-recalls/2022/01/counterfeit-dyson-airwrap/", "takeaway": "Official UK safety testing of a counterfeit Airwrap clone found inadequate internal wiring creating a serious risk of electric shock and fire — failed UK electrical safety regulations outright." }
       ]
     },
     {
@@ -432,7 +450,7 @@
       "caveat": "Buy the vetted CRZ pick instead; the $8 ones rarely last a season.",
       "reasons": ["See-through / fails squat test", "Pills and loses shape fast"],
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=cheap+lululemon+align+dupe+see+through+pilling+review", "takeaway": "The cheapest Align knockoffs are widely warned against for sheerness and durability; spend a bit more on a reviewed pair." }
+        { "source": "We Tried It", "url": "https://wetried.it/lululemon-dupes/", "takeaway": "Reviewers who tested a dozen Align dupes concluded Temu, SHEIN, and most no-name Amazon-brand leggings \"do NOT hold up\" — expect pilling, fading, or stretching within 20-30 wash cycles." }
       ]
     }
   ]
