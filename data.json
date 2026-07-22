@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-11",
+    "updated": "2026-07-21",
     "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason. Entries marked 'Consensus across reviews' summarize the well-documented review consensus with a search link; individually-cited entries link the specific articles.",
     "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
   },
@@ -126,7 +126,8 @@
       "summary": "Made by UGG's own parent company (Deckers) — the closest 'official' budget line: same cozy look and faux-shearling warmth for far less.",
       "caveat": "Faux (not genuine) shearling, so less plush and less durable than real UGGs over years of wear.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Koolaburra+by+UGG+vs+UGG+worth+it+review", "takeaway": "Widely seen as the most legit UGG alternative since it's from the same parent brand; great value, slightly less luxe feel." }
+        { "source": "Woman & Home", "url": "https://www.womanandhome.com/fashion/ugg-boots-alternatives/", "takeaway": "Koolaburra shares UGG's owner and look at a lower price, but substitutes faux-fur lining for UGG's naturally sourced sheepskin." },
+        { "source": "Zappos customer reviews", "url": "https://www.zappos.com/product/review/9103248/page/3", "takeaway": "Across 70 Koola Short reviews, most buyers rated the boot highly; fit feedback is mixed, with some reporting a stiff or tight instep." }
       ]
     },
     {
