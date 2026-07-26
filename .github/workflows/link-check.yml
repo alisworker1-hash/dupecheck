@@ -20,16 +20,30 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - name: Extract data.json image URLs
-        # Product image URLs live in data.json, injected into the DOM by
-        # app.js at runtime — the *.html glob below never sees them, so a
-        # dead product photo can ship while this workflow stays green.
+      - name: Extract data.json URLs (product images + review citations)
+        # BOTH product images and review CITATION urls live in data.json and are
+        # injected into the DOM by app.js at runtime, so the *.html glob below
+        # never sees either kind. Images were already extracted here; the review
+        # links were not, and that blind spot let two citations sit dead (HTTP
+        # 404) while this workflow reported success. On a site whose entire claim
+        # is "review-vetted", a citation the reader cannot open is the failure
+        # that matters most — so they are checked from now on.
         # Rejected dupes intentionally have a null img (no photo, gradient
         # fallback shows through — see app.js's onerror handler), so those
         # are filtered out here rather than checked as broken links.
         run: |
           jq -r '.dupes[] | .dupe.img, .original.img | select(. != null)' data.json > data-image-urls.txt
-          wc -l data-image-urls.txt
+          jq -r '.dupes[] | .reviews[]?.url | select(. != null)' data.json > data-review-urls.txt
+          imgs=$(wc -l < data-image-urls.txt)
+          revs=$(wc -l < data-review-urls.txt)
+          echo "image URLs:  $imgs"
+          echo "review URLs: $revs"
+          # Guard against SILENT COVERAGE LOSS. Extraction is by jq path, so a
+          # schema rename (.reviews -> .sources, say) would quietly yield an
+          # empty file and this job would go green while checking nothing —
+          # exactly the failure mode being fixed above. Fail loudly instead.
+          test "$imgs" -gt 0 || { echo "::error::no image URLs extracted from data.json — has the schema changed?"; exit 1; }
+          test "$revs" -gt 0 || { echo "::error::no review URLs extracted from data.json — has the schema changed?"; exit 1; }
 
       - name: Check links
         uses: lycheeverse/lychee-action@v2
@@ -41,8 +55,28 @@ jobs:
           # --user-agent: several product CDNs (Amazon, Target, Nordstrom)
           # hotlink-block generic clients and return connect failures to a
           # bare request — a real UA avoids false-positive "dead" images.
+          # --accept: the question this check exists to answer is "is the cited
+          # page GONE", not "will it serve a GitHub runner". Review sources are
+          # mainstream publishers and Cloudflare-fronted blogs (CNN, Reddit,
+          # prudentreviews) that answer 403 to datacenter IPs while opening
+          # perfectly for a reader — the same hotlink-blocking the --user-agent
+          # note below already describes for image CDNs. Treating those as
+          # breakage makes the check cry wolf, and a check that cries wolf is one
+          # people learn to ignore. 404/410 — actually gone — still fails.
+          # --timeout/--max-retries: slow first-byte responses were surfacing as
+          # TIMEOUT errors on links that resolve fine on a second attempt.
+          # --exclude web.archive.org: a Wayback snapshot is an IMMUTABLE capture,
+          # so it is the rot-proof form of a citation and checking it buys almost
+          # nothing. Meanwhile archive.org throttles datacenter ranges and answers
+          # GitHub runners with a non-standard 498, which is not breakage: the same
+          # snapshot returns HTTP 200 with the expected article text from an
+          # ordinary client (verified, including with a bot user-agent).
           args: >-
             --no-progress
+            --accept '200..=299,403,429'
+            --exclude 'web\.archive\.org'
+            --timeout 30
+            --max-retries 3
             --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-            './**/*.html' data-image-urls.txt
+            './**/*.html' data-image-urls.txt data-review-urls.txt
           fail: true
