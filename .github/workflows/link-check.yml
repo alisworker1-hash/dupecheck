@@ -7,9 +7,23 @@ name: Link Check
 on:
   push:
     branches: [main]
+  # Run on PRs too, not just after merge. Without this the job only fired once a
+  # change was already on main, which is exactly how PR #10 looked green on its
+  # branch and then went red the moment it landed — a dead link could reach the
+  # published site and only be reported afterwards. Uses `pull_request` (not
+  # `pull_request_target`), so a fork PR runs with a read-only token and cannot
+  # reach secrets; this job needs neither.
+  pull_request:
+    branches: [main]
   schedule:
     - cron: "0 9 * * 1"
   workflow_dispatch:
+
+# A PR that gets several pushes in a row should not leave stale runs checking
+# ~109 third-party URLs each; keep only the newest per ref.
+concurrency:
+  group: link-check-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
