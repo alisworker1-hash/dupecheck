@@ -57,12 +57,18 @@ jobs:
           # bare request — a real UA avoids false-positive "dead" images.
           # --accept: the question this check exists to answer is "is the cited
           # page GONE", not "will it serve a GitHub runner". Review sources are
-          # mainstream publishers and Cloudflare-fronted blogs (CNN, Reddit,
-          # prudentreviews) that answer 403 to datacenter IPs while opening
-          # perfectly for a reader — the same hotlink-blocking the --user-agent
-          # note below already describes for image CDNs. Treating those as
-          # breakage makes the check cry wolf, and a check that cries wolf is one
-          # people learn to ignore. 404/410 — actually gone — still fails.
+          # mainstream publishers and WAF-fronted blogs that refuse datacenter
+          # IPs while opening perfectly for a reader — the same hotlink-blocking
+          # the --user-agent note below already describes for image CDNs. The
+          # refusal code varies by WAF: CNN/Reddit/prudentreviews answered 403,
+          # thatfitfriend/thenewknew answered 415 ("Unsupported Media Type",
+          # which is nonsense for an article and was verified as 200 on both HEAD
+          # and GET from an ordinary client). So the accepted set is every code
+          # meaning "server was reached and refused us", and NOT 404/410, which
+          # mean actually gone and still fail the build.
+          # This class of check is inherently a little noisy from CI IPs; the
+          # tradeoff is deliberate, because a job that goes red for reasons
+          # nobody can fix is one people learn to ignore.
           # --timeout/--max-retries: slow first-byte responses were surfacing as
           # TIMEOUT errors on links that resolve fine on a second attempt.
           # --exclude web.archive.org: a Wayback snapshot is an IMMUTABLE capture,
@@ -73,7 +79,7 @@ jobs:
           # ordinary client (verified, including with a bot user-agent).
           args: >-
             --no-progress
-            --accept '200..=299,403,429'
+            --accept '200..=299,401,403,405,415,429,503'
             --exclude 'web\.archive\.org'
             --timeout 30
             --max-retries 3
