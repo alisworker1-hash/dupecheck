@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-07-11",
+    "updated": "2026-07-21",
     "methodology": "Every dupe is checked against real reviews from multiple independent sources. A dupe is only shown if it has consistent positive reviews (composite ≈ 4/5 or better, multiple sources, no major durability or safety red flags). Fake-branded / counterfeit items are never listed — only legitimate affordable alternatives. Dupes that fail the check are listed in 'Didn't make the cut' with the reason. Entries marked 'Consensus across reviews' summarize the well-documented review consensus with a search link; individually-cited entries link the specific articles.",
     "disclaimer": "Prices are approximate and change often — verify before buying. Not affiliated with any brand or retailer; no affiliate links. 'Dupe' here means a legitimate lower-cost alternative with a similar look/effect, never a counterfeit."
   },
@@ -44,7 +44,7 @@
       "caveat": "Oxidizes slightly darker than the cap shade; 18 shades vs Tarte's 30. Pick a touch lighter.",
       "reviews": [
         { "source": "PureWow", "url": "https://www.purewow.com/beauty/what-the-dupe-tarte-shape-tape-elf-concealer", "takeaway": "\"Performance and coverage are almost identical\" — both full-coverage, creamy, matte." },
-        { "source": "Dishing Up Chic", "url": "https://dishingupchic.com/2020/01/20/dupe-or-dud-elf-16hr-camo-concealer-vs-tarte-shape-tape/", "takeaway": "Builds beautifully and blends just as easily, if not more so, than Shape Tape." }
+        { "source": "Dishing Up Chic (archived)", "url": "https://web.archive.org/web/20210418185115/https://dishingupchic.com/2020/01/20/dupe-or-dud-elf-16hr-camo-concealer-vs-tarte-shape-tape/", "takeaway": "Builds beautifully and blends just as easily, if not more so, than Shape Tape." }
       ]
     },
     {
@@ -98,7 +98,6 @@
       "summary": "Cork-footbed sandal with real arch support and — unlike Birkenstocks — basically no break-in period. Comfortable out of the box.",
       "caveat": "Runs small (size up a half). Less durable long-term than a Birkenstock.",
       "reviews": [
-        { "source": "Lemon8 — Lissa", "url": "https://www.lemon8-app.com/lissa_bax/7222735270113198597?region=us", "takeaway": "Immediate comfort + arch support, no break-in — a \"fantastic, affordable alternative.\"" },
         { "source": "Rank & Style", "url": "https://www.rankandstyle.com/articles/birkenstock-dupes", "takeaway": "Highly recommended for those new to structured footbeds wanting arch support." }
       ]
     },
@@ -126,7 +125,8 @@
       "summary": "Made by UGG's own parent company (Deckers) — the closest 'official' budget line: same cozy look and faux-shearling warmth for far less.",
       "caveat": "Faux (not genuine) shearling, so less plush and less durable than real UGGs over years of wear.",
       "reviews": [
-        { "source": "Consensus across reviews", "url": "https://www.google.com/search?q=Koolaburra+by+UGG+vs+UGG+worth+it+review", "takeaway": "Widely seen as the most legit UGG alternative since it's from the same parent brand; great value, slightly less luxe feel." }
+        { "source": "Woman & Home", "url": "https://www.womanandhome.com/fashion/ugg-boots-alternatives/", "takeaway": "Koolaburra shares UGG's owner and look at a lower price, but substitutes faux-fur lining for UGG's naturally sourced sheepskin." },
+        { "source": "Zappos customer reviews", "url": "https://www.zappos.com/product/review/9103248/page/3", "takeaway": "Across 70 Koola Short reviews, most buyers rated the boot highly; fit feedback is mixed, with some reporting a stiff or tight instep." }
       ]
     },
     {
@@ -176,7 +176,7 @@
       "category": "clothing",
       "verdict": "pass",
       "rating": 4.5,
-      "dupe": { "name": "Butterluxe High-Waist Leggings", "brand": "CRZ YOGA", "price": 28, "img": "https://us.crzyoga.com/cdn/shop/files/R583-94-Crystal-1_e895da69-fe88-4fd8-8cd2-c01fa8e0a804_1296x.jpg?v=1783330509" },
+      "dupe": { "name": "Butterluxe High-Waist Leggings", "brand": "CRZ YOGA", "price": 28 },
       "original": { "name": "Align High-Rise Leggings", "brand": "Lululemon", "price": 98, "img": "https://shop.simon.com/cdn/shop/files/17509993494f4d36a1bd85fc3fbd5e88.jpg?v=1781868068" },
       "summary": "The most-recommended Align dupe by a mile: buttery-soft, squat-proof and flattering for under a third of the price.",
       "caveat": "Lululemon's Align is still slightly softer/more weightless; CRZ runs a touch more compressive (some size up).",
