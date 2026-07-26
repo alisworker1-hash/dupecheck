@@ -65,9 +65,16 @@ jobs:
           # people learn to ignore. 404/410 — actually gone — still fails.
           # --timeout/--max-retries: slow first-byte responses were surfacing as
           # TIMEOUT errors on links that resolve fine on a second attempt.
+          # --exclude web.archive.org: a Wayback snapshot is an IMMUTABLE capture,
+          # so it is the rot-proof form of a citation and checking it buys almost
+          # nothing. Meanwhile archive.org throttles datacenter ranges and answers
+          # GitHub runners with a non-standard 498, which is not breakage: the same
+          # snapshot returns HTTP 200 with the expected article text from an
+          # ordinary client (verified, including with a bot user-agent).
           args: >-
             --no-progress
             --accept '200..=299,403,429'
+            --exclude 'web\.archive\.org'
             --timeout 30
             --max-retries 3
             --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
