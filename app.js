@@ -12,6 +12,14 @@ let searchQuery = "";
 
 const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+// esc() stops an attribute breakout but says nothing about the URL SCHEME, so
+// href="javascript:..." would survive it and run on click. This repo is public,
+// so a merged pull request touching data.json is a real path for that. Allow
+// only http/https; anything else renders as an inert link.
+const safeUrl = (u) => {
+  const s = String(u ?? "").trim();
+  return /^https?:\/\//i.test(s) ? s : "#";
+};
 const savings = (d) => Math.round((1 - d.dupe.price / d.original.price) * 100);
 const money = (n) => "$" + (Number(n) % 1 === 0 ? n : n.toFixed(2));
 
@@ -116,7 +124,7 @@ function openModal(d) {
   const icon = cat.icon || "🛍️";
   const reviews = (d.reviews || []).map((r) => `
     <div class="review">
-      <div class="src"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.source)}</a><span class="ext">source ↗</span></div>
+      <div class="src"><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener">${esc(r.source)}</a><span class="ext">source ↗</span></div>
       <p>${esc(r.takeaway)}</p>
     </div>`).join("");
   const reasons = d.reasons ? `<ul class="m-reasons">${d.reasons.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
